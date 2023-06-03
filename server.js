@@ -7,7 +7,7 @@ const uri='mongodb+srv://alanbiju1234:Soidontforget@synoptic.q5e7ldv.mongodb.net
 async function connect(){
     try{
         await mongoose.connect(uri)
-        console.log("Connected to mongoDB")
+        console.log("Connected to mongoDB") 
     }catch (error){
         console.error(error);
     }
@@ -18,3 +18,4 @@ connect();
 app.listen(3000,()=>{
     console.log('listening on port 3000')
 })
+
