@@ -49,4 +49,16 @@
 .form-control {
   min-width: 300px;
 }
+.start-my-journey{
+  background-color: darkorange;
+  margin: 10px;
+  padding: 10px 20px;
+  border: 2px solid darkorange;
 
+
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}

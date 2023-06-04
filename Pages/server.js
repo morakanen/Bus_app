@@ -17,7 +17,7 @@ app.use(express.static('public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.post('/your-server-script', (req, res) => {
+app.post('/icon-information', (req, res) => {
   const { lat, lng } = req.body;
   console.log(lat,lng)
   pool.query(
