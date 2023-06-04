@@ -1,0 +1,52 @@
+.main-body {
+  background-color: black;
+}
+
+.main-title {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.bg-orange {
+  background-color: darkorange;
+}
+
+.navbar-nav .nav-item .nav-link {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#map {
+  height: 400px; 
+  width: 100%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.form-group {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.where-to {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.from-where {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.form-control {
+  min-width: 300px;
+}
+

@@ -14,14 +14,8 @@
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-      integrity="sha384-Fn8+3CcLk8h+8K4iym5r0T03cR9kLpIOl1pi52X6r5bFtAmrlozInQTL2Mmn/L0o"
-      crossorigin=""
     />
-    <script
-      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-      integrity="sha384-zRU3qo2KwY3va5JtjFqbsq0Ij8zjfsl9fuOD/0A0Tj3gL1lSnv4IQhIKc3IZYTRZ"
-      crossorigin=""
-    ></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
   </head>
   <body class="main-body">
     <div class="hamburger-menu">
@@ -61,10 +55,33 @@
     </div>
 
     <div id="map"></div>
-    <script src="route.js"></script>
+    <div class="form-container">
+      <form>
+        <div class="form-group">
+          <label class="from-where" class="where-to" for="input1"
+            >From where?</label
+          >
+          <select class="form-control" id="input1" name="input1">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="where-to" for="input2">Where to?</label>
+          <select class="form-control" id="input2" name="input2">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
+        </div>
+      </form>
+    </div>
+
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="route.js"></script>
   </body>
 </html>

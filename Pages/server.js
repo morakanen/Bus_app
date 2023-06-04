@@ -12,10 +12,13 @@ async function connect(){
         console.error(error);
     }
 }
+app.use(express.static('public'));
+
 
 connect();
 
 app.listen(3000,()=>{
     console.log('listening on port 3000')
 })
+
 
