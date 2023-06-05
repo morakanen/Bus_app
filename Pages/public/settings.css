@@ -1,0 +1,20 @@
+.main-body
+{
+    background-color: black
+}
+
+.main-title
+{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+.bg-orange {
+    background-color: darkorange;
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+
+    font-size: 25px;
+    font-weight: bold;
+  }

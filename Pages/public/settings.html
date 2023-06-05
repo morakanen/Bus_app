@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hamburger Menu Example</title>
+    <link rel="stylesheet" type="text/css" href="home.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/i18next/dist/umd/i18next.min.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+  </head>
+  <body class="main-body">
+    <div class="hamburger-menu">
+      <nav class="navbar navbar-expand-md navbar-light bg-orange">
+        <div class="container">
+          <a class="main-title"  href="#">GOVA BUS</a>
+
+          <!-- Hamburger Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navigation Menu -->
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a id = "home" class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a id = "route"class="nav-link" href="route.html">Route</a>
+              </li>
+              <li class="nav-item">
+                <a id=bustimes class="nav-link" href="busTime.html">Bus time</a>
+              </li>
+              <li class="nav-item">
+                <a id=settings class="nav-link" href="settings.html">Settings</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--langauge changing module-->
+    <div>
+        <label for="language-select">Select Language:</label>
+        <select id="language-select" onchange="changeLanguage(this.value)">
+            <option value="en">English</option>
+            <option value="fr">French</option>
+    </select>
+
+    </div>
+
+    <!--langauge changing module-->
+    <script src="lanuguagechange.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

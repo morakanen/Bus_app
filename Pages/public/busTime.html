@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/i18next/dist/umd/i18next.min.js"></script>
   </head>
   <body class="main-body">
     <div class="hamburger-menu">
@@ -30,17 +31,17 @@
           <!-- Navigation Menu -->
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Route</a>
-              </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#">Bus time</a>
+                <a id = "home" class="nav-link" href="home.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Settings</a>
+                <a id = "route"class="nav-link" href="route.html">Route</a>
+              </li>
+              <li class="nav-item">
+                <a id=bustimes class="nav-link" href="busTime.html">Bus time</a>
+              </li>
+              <li class="nav-item">
+                <a id=settings class="nav-link" href="settings.html">Settings</a>
               </li>
             </ul>
           </div>
@@ -48,6 +49,8 @@
       </nav>
     </div>
 
+    <!--langauge changing module-->
+    <script src="lanuguagechange.js"></script>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap JS -->

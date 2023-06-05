@@ -2,15 +2,20 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 
+<<<<<<< Updated upstream
 
 //imports for MYSQL 
 const { createPool } = require('mysql')
 
 
+=======
+//imports for MYSQL
+const { createPool } = require('mysql2')
+>>>>>>> Stashed changes
 const pool = createPool({
   host: "localhost",
   user: "root",
-  password: "password",
+  password: "root",
   database: "gova" // Replace with your database name
 })
 
@@ -52,6 +57,18 @@ app.get('/about', (req, res) => {
   res.sendFile(path.join(__dirname, 'Pages/public', 'about.html'));
 });
 
+<<<<<<< Updated upstream
+=======
+app.get('/route', (req, res) => {
+  res.sendFile(path.join(__dirname, 'Pages/public', 'route.html'));
+});
+
+app.get('/route', (req, res) => {
+  res.sendFile(path.join(__dirname, 'Pages/public', 'settings.html'));
+});
+
+
+>>>>>>> Stashed changes
 app.get('/bustimes', (req, res) => {
   // Get the stops and their respective next stops from the database
   pool.query(
