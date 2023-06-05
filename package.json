@@ -8,12 +8,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-<<<<<<< Updated upstream
-    "devStart": "nodemon server.js"
-=======
     "devStart": "nodemon server.js",
     "devTools": "nodemon --inspect-brk server.js"
->>>>>>> Stashed changes
   },
   "keywords": [
     "ALAN"
@@ -26,11 +22,7 @@
     "express": "^4.18.2",
     "mongoose": "^7.2.2",
     "mongosh": "^1.9.1",
-<<<<<<< Updated upstream
-    "mysql": "^2.18.1",
-=======
     "mysql2": "^3.3.3",
->>>>>>> Stashed changes
     "pug": "^3.0.2"
   },
   "devDependencies": {
