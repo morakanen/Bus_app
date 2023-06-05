@@ -7,9 +7,9 @@ const { createPool } = require('mysql')
 
 const pool = createPool({
   host: "localhost",
-  user: "sqluser",
+  user: "root",
   password: "password",
-  database: "gova-bus" 
+  database: "gova" 
 })
 
 app.use(express.static('public'));
